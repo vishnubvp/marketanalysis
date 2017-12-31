@@ -1,3 +1,3 @@
-import MonthWrapper
-wrap = MonthWrapper.MonthDetailsClass() 
+import Wrapper
+wrap = Wrapper.MonthDetailsClass() 
 wrap.MonthDetailsFunc()
