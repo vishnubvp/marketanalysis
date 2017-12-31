@@ -1,0 +1,14 @@
+yum install gcc-c++
+yum install wget
+cd /opt
+wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
+wget https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.gz
+tar -xvf Python-3.6.4.tar.xz
+tar -xvf boost_1_66_0.tar.gz
+cd Python-3.6.4
+./configure
+make install
+cd ../boost_1_66_0
+./bootstrap.sh
+mkdir /opt/boost-install
+./b2 install --prefix=/opt/boost-install
