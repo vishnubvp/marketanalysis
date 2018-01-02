@@ -3,9 +3,6 @@
 BOOST_PYTHON_MODULE(Wrapper)
 {
     using namespace boost::python;
-    def("MonthDetails", &MonthDetailsClass::MonthDetailsFunc);
-}
-int main()
-{
-	return 0;
+    class_<MonthDetailsClass>("MonthDetailsClass")
+    .def("MonthDetails", &MonthDetailsClass::MonthDetailsFunc);
 }
